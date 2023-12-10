@@ -42,9 +42,6 @@ namespace HotelBookingProgram
 
                 Console.Write("Please enter your email address: ");
                 emailAddress = Console.ReadLine();
-                
-                Console.Write("How many residents will be staying: ");
-                residents = int.Parse(Console.ReadLine());
 
             
             // ex
@@ -122,6 +119,7 @@ namespace HotelBookingProgram
 
                 Console.WriteLine();
                 Console.WriteLine("Enter the number of occupants.");
+                residents = int.Parse(Console.ReadLine());
                 
                 Console.Write("Adults: ");
                 int adultno = int.Parse(Console.ReadLine());
@@ -424,14 +422,14 @@ namespace HotelBookingProgram
                 // Display user inputs
                 Console.Clear();
                 
-                Console.WriteLine("Your book to Bigtas Hotel is accepted! \nBooking Details :");
+                Console.WriteLine("Your book to Morada Grand Royal Hotel is accepted! \nBooking Details :");
                 Console.WriteLine("Name: " + name);
                 Console.WriteLine("Laguna Branch: " + branch);
                 Console.WriteLine("Check-in Date: " + startDate);
                 Console.WriteLine("Check-out Date: " + endDate);
                 Console.WriteLine("Days to stay: " + daysDifference);
                 Console.WriteLine("Room Choice: " + room + selectedRoom);
-                Console.WriteLine("Residents: " + residents);
+                Console.WriteLine("Occupants: " + residents);
                 Console.WriteLine("Total Cost: " + total);
                 Console.WriteLine("Payment method: " + paymentmeth);
                 
